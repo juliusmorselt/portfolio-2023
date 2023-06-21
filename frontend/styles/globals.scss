@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-slate-200 text-black text-base;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section{
+    @apply max-w-[1440px] py-12 md:py-24 mx-auto;
+}
+
+.container {
+    @apply max-w-[1260px]
+}
+
+
+a, p {
+    @apply mb-4
+}
+
+h1, h2, h3 {
+    @apply font-bold mb-6
+}
+
+h1 {
+    @apply text-h3 md:text-h2 lg:text-h1
+}
+
+h2 {
+    @apply text-h3 md:text-h2
+}
+
+h3 {
+    @apply text-xl
+}
+
+.test {
+    border: solid 2px white;
+    
+}
+
+.hexagon {
+    width: 100%;
+    aspect-ratio: 1;
+    overflow: hidden;
+    background-color: inherit;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
