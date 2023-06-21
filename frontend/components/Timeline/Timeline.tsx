@@ -16,7 +16,7 @@ export default function Timeline({ tlInfo, activeTabIndex }: any) {
 
             <div>
                 {activeTabData.map((item: any, index: number) => (
-                    <div className="mb-12 last:mb-0">
+                    <div key={index} className="mb-12 last:mb-0">
                         <h4 className="-mt-1 relative font-bold text-xl">
                             <div className="mt-1 rounded-full -left-[31px] bg-black w-[20px] aspect-square absolute" />
                             {item.exp.title}

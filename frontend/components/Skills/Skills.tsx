@@ -20,7 +20,7 @@ export default function Skills() {
                 <div key={index}>
                     <div />
                     <h2>Vaardigheden</h2>
-                    <p>Ik heb veel ervaring met deze programma's en programmeertalen</p>
+                    <p>Ik heb veel ervaring met deze programmas en programmeertalen</p>
 
                     <div className="py-6">
                         {/* Tabs */}

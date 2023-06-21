@@ -23,7 +23,7 @@ export default function Experience() {
             <p>Relevante school en werk ervaring</p>
             {experienceData.map((item, index) => (
                 <>
-                    <div className="py-6 flex flex-wrap sm:flex-nowrap justify-center gap-2 text-center pb-6">
+                    <div key={index} className="py-6 flex flex-wrap sm:flex-nowrap justify-center gap-2 text-center pb-6">
                         {item.data?.tabs.map((item, index) => (
                             <div
                                 key={index}
