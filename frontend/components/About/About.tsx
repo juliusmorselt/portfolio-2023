@@ -1,4 +1,6 @@
 import Image from "next/image"
+
+//Data
 import Myself from '../../assets/images/julius.png'
 
 export default function About() {

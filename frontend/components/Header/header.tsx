@@ -4,7 +4,6 @@
 import { motion } from 'framer-motion'
 
 //Icons
-import { BsFillTriangleFill } from "react-icons/bs"
 import { RxHamburgerMenu } from "react-icons/rx"
 import { AiOutlineClose } from 'react-icons/ai'
 
@@ -17,13 +16,6 @@ import Logo from '../SVG/logo'
 
 export default function Header() {
     const [hamburgerOpen, setHamburgerOpen] = useState(false)
-    const [menuOpen, setMenuOpen] = useState(false)
-    const [rotated, setRotated] = useState(false)
-
-    const toggleMenu = () => {
-        setMenuOpen((current) => !current)
-        setRotated((current) => !current)
-    }
 
     const navInfo = {
         hidden: { opacity: 0 },
@@ -61,25 +53,16 @@ export default function Header() {
                     <Logo />
                 </div>
                 <div className="hidden md:flex h-[60px] gap-6 items-center mb-0">
-                    {menuOpen && (
-                        <motion.div
-                            className="flex sm:flex-row flex-col sm:gap-6 gap-3"
-                            variants={container}
-                            initial="hidden"
-                            animate="show"
-                            exit="hidden"
-                        >
-                            {headerData.map((item: any, index: number) => (
-                                <motion.a key={index} variants={navitem} href={item.link.url} className='hover:scale-110 hover:cursor-pointer !mb-0'>
-                                    {item?.link?.title}
-                                </motion.a>
-                            ))}
-                        </motion.div>
-                    )}
-                    <BsFillTriangleFill
-                        className={`hover:cursor-pointer transition-all ${rotated ? '-rotate-90' : ''}`}
-                        onClick={toggleMenu}
-                    />
+                    
+                    <div
+                        className="flex sm:flex-row flex-col sm:gap-6 gap-3"
+                    >
+                        {headerData.map((item: any, index: number) => (
+                            <motion.a key={index} variants={navitem} href={item.link.url} className='hover:scale-110 hover:cursor-pointer !mb-0'>
+                                {item?.link?.title}
+                            </motion.a>
+                        ))}
+                    </div>
                 </div>
                 <div className='flex md:hidden'>
                     <RxHamburgerMenu className='text-2xl' onClick={toggleHamburger} />

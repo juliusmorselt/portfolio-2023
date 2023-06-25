@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react"
+
+//External libraries
 import "swiper/swiper-bundle.css"
 import AOS from "aos"
 import "aos/dist/aos.css"

@@ -1,12 +1,15 @@
-import me from '../assets/images/julius.jpg'
+//Images - programming
 import nextjsLogo from '../assets/logos/nextjs_logo.png'
 import reactjsLogo from '../assets/logos/reactjs_logo.png'
 import tailwindcssLogo from '../assets/logos/tailwindcss_logo.png'
 import firebaseLogo from '../assets/logos/firebase_logo.png'
 import sassLogo from '../assets/logos/sass_logo.png'
+
+//Images - non programming
 import photoshopLogo from '../assets/logos/photoshop_logo.png'
 import figmaLogo from '../assets/logos/figma_logo.png'
 
+//Navbar
 export const headerData = [
     {
         link: {
@@ -28,15 +31,7 @@ export const headerData = [
     },
 ]
 
-export const aboutData = [
-    {
-        text: {
-            title: 'About Me',
-            text: 'My name is Julius Morselt and I am a 21 y.o. Frontend Developer from the Netherlands based in Arnhem!'
-        }
-    }
-]
-
+//Skills
 export const skillsData = [
     {
         data: {
@@ -48,7 +43,7 @@ export const skillsData = [
                             {
                                 card: {
                                     title: 'NextJS',
-                                    description: 'Hier heb ik veel mee gewerkt in de tijd bij mijn eerste bedrijf. Ik heb hier veel van geleerd en gebruik het nu in mijn eigen hobbie projecten.',
+                                    description: 'Hier heb ik veel mee gewerkt in de tijd bij mijn eerste bedrijf. Ik heb hier veel van geleerd en gebruik het nu in mijn eigen hobby projecten.',
                                     icon: nextjsLogo
                                 }
                             },
@@ -69,7 +64,7 @@ export const skillsData = [
                             {
                                 card: {
                                     title: 'Firebase',
-                                    description: 'Hier ben ik zelf mee aan de slag gegaan voor hobbie projecten waar ik een database voor nodig had. Mijn eerste ervaring met firebase was een webshop waarbij je jezelf kon aanmelden en in kon loggen.',
+                                    description: 'Hier ben ik zelf mee aan de slag gegaan voor hobby projecten waar ik een database voor nodig had. Mijn eerste ervaring met Firebase was een webshop waarbij je jezelf kon aanmelden en in kon loggen.',
                                     icon: firebaseLogo
                                 }
                             },
@@ -90,7 +85,7 @@ export const skillsData = [
                             {
                                 card: {
                                     title: 'Photoshop',
-                                    description: 'Ik heb met dit programma leren werken op mijn opleding.',
+                                    description: 'Ik heb met dit programma leren werken op mijn opleiding.',
                                     icon: photoshopLogo
                                 }
                             },
@@ -109,6 +104,7 @@ export const skillsData = [
     }
 ]
 
+//Experience
 export const experienceData = [
     {
         data: {
@@ -120,8 +116,8 @@ export const experienceData = [
                             {
                                 exp: {
                                     title: 'Rijn IJssel - Media vormgeving',
-                                    fromtill: 'September 2018 - December 2023',
-                                    description: "Deze opleiding is gericht op de beeldende aspecten van het vak: (grafisch) ontwerp, video’s maken / bewerken. Hier heb ik leren werken met de volgende Adobe producten: Photoshop, Indesign, Illustrator, After Effects en Premiere Pro. Ook heb ik hier met programma’s gewerkt zoals Blender, voor 3d animaties, en Figma, voor webdesign.",
+                                    fromtill: 'September 2018 - December 2022',
+                                    description: "Deze opleiding is gericht op de beeldende aspecten van het vak: (grafisch) ontwerp, video’s maken / bewerken. Hier heb ik leren werken met de volgende Adobe producten: Photoshop, InDesign, Illustrator, After Effects en Première Pro. Ook heb ik hier met programma’s gewerkt zoals Blender, voor 3D animaties, en Figma, voor webdesign.",
                                 }
                             },
                         ]

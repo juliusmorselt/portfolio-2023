@@ -1,13 +1,16 @@
 "use client"
-
-import { skillsData } from "../../data/data"
 import React, { useState, useEffect } from "react"
+import Image from "next/image"
+
+//Data
+import { skillsData } from "../../data/data"
+import Card from "../Card/Card"
+
+//External libraries
 import "swiper/swiper-bundle.css"
 import AOS from "aos"
 import "aos/dist/aos.css"
-import Image from "next/image"
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
-import Card from "../Card/Card"
 
 export default function Skills() {
     const [activeTabIndex, setActiveTabIndex] = useState(0)
@@ -20,7 +23,7 @@ export default function Skills() {
                 <div key={index}>
                     <div />
                     <h2>Vaardigheden</h2>
-                    <p>Ik heb veel ervaring met deze programmas en programmeertalen</p>
+                    <p>Ik heb veel ervaring met deze programma&apos;s en programmeertalen</p>
 
                     <div className="py-6">
                         {/* Tabs */}

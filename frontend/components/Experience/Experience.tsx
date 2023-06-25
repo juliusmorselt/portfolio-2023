@@ -1,14 +1,15 @@
 "use client"
+import React, { useState, useEffect } from "react"
 
+//Data
 import { experienceData } from "../../data/data"
-import React, { useState, useEffect, createContext } from "react"
+
+//External Libraries
 import "swiper/swiper-bundle.css"
 import AOS from "aos"
 import "aos/dist/aos.css"
-import Image from "next/image"
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
-import Card from "../Card/Card"
-import Tabs from "../Tabs/Tabs"
+
+//Components
 import Timeline from "../Timeline/Timeline"
 
 
