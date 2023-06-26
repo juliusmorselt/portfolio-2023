@@ -139,7 +139,7 @@ export const experienceData = [
                                 exp: {
                                     title: 'Four Digits',
                                     fromtill: 'Februari 2022 - Augustus 2022',
-                                    description: 'Op deze stage heb ik mij kunen focussen op Django, Boostrap en Figma. Hier was ik bezig met het dashboard van Four Auctions.',
+                                    description: 'Op deze stage heb ik mij kunnen focussen op Django, Boostrap en Figma. Hier was ik bezig met het dashboard van Four Auctions.',
                                 }
                             },
                         ]
