@@ -12,6 +12,8 @@ import "aos/dist/aos.css"
 //Components
 import Timeline from "../Timeline/Timeline"
 
+//Functions
+import {handleTabSwitch} from '../Timeline/Timeline'
 
 export default function Experience() {
     const [activeTabIndex, setActiveTabIndex] = useState(0)
@@ -28,7 +30,11 @@ export default function Experience() {
                         {item.data?.tabs.map((item, index) => (
                             <div
                                 key={index}
-                                onClick={() => setActiveTabIndex(index)}
+                                onClick={ () => {
+                                        setActiveTabIndex(index)
+                                        handleTabSwitch()
+                                    }
+                                }
                                 className="border-b border-b-white bg-white rounded-md hover:bg-violet-900 hover:bg-opacity-50 hover:cursor-pointer transition-all w-full"
                             >
                                 <p

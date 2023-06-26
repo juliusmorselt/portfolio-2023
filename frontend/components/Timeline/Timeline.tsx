@@ -7,20 +7,26 @@ import "aos/dist/aos.css"
 
 export default function Timeline({ tlInfo, activeTabIndex }: any) {
     useEffect(() => {
-        AOS.init()
+        AOS.init({
+            disable:true
+        })
     }, [])
     const activeTabData =
         tlInfo[0]?.data?.tabs[activeTabIndex]?.tab?.experience || []
     return (
-        <div className="flex gap-5">
+        <div className="flex gap-5" data-aos='fade-right'>
             {/* Line */}
             <div className="flex-grow border border-black" />
 
             <div>
                 {activeTabData.map((item: any, index: number) => (
                     <div key={index} className="mb-12 last:mb-0">
-                        <h4 className="-mt-1 relative font-bold text-xl">
-                            <div className="mt-1 rounded-full -left-[31px] bg-black w-[20px] aspect-square absolute" />
+                        <h4 className="-mt-1 relative font-bold text-xl ">
+
+                            {/* The ball */}
+                            <div className={`rounded-full ${index === 0 ? 'mt-1' : 'mt-1.5'} -left-[31px] bg-black w-[20px] aspect-square absolute`} />
+                            
+                            {/* The text */}
                             {item.exp.title}
                         </h4>
                         <p>{item.exp.fromtill}</p>
@@ -33,4 +39,8 @@ export default function Timeline({ tlInfo, activeTabIndex }: any) {
             </div>
         </div>
     )
+}
+
+export function handleTabSwitch() {
+    AOS.refresh();
 }

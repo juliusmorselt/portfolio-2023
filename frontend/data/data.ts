@@ -135,6 +135,13 @@ export const experienceData = [
                                     description2: 'Na 3 maanden parttime traineeship mocht ik full-time aan de slag. Ik heb veel Front End kennis opgedaan: TailwindCSS, NextJS en ReactJS. Projecten waar ik onder andere aan heb gewerkt zijn PejaProducten, ShapeMakers en ARV Group.',
                                 }
                             },
+                            {
+                                exp: {
+                                    title: 'Four Digits',
+                                    fromtill: 'Februari 2022 - Augustus 2022',
+                                    description: 'Op deze stage heb ik mij kunen focussen op Django, Boostrap en Figma. Hier was ik bezig met het dashboard van Four Auctions.',
+                                }
+                            },
                         ]
                     }
                 },

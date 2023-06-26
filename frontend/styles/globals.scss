@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply bg-slate-200 text-black text-base;
+    @apply bg-slate-100 text-black text-base;
 }
 
 html {
@@ -44,10 +44,8 @@ h3 {
     
 }
 
-.hexagon {
-    width: 100%;
-    aspect-ratio: 1;
-    overflow: hidden;
-    background-color: inherit;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+.h4WBall {
+    :first-of-type {
+        background-color: green !important;
+    }
 }
