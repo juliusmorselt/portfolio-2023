@@ -44,8 +44,9 @@ h3 {
     
 }
 
-.h4WBall {
-    :first-of-type {
-        background-color: green !important;
+.inputWithPlaceholder {
+    @apply mb-2 w-full rounded-[10px] relative outline-none overflow-hidden border;
+    .input {
+        @apply w-full outline-none h-[40px] rounded-[10px] bg-white border-none pl-[10px] shadow relative;
     }
 }
