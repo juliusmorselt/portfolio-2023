@@ -9,6 +9,11 @@ import sassLogo from '../assets/logos/sass_logo.png'
 import photoshopLogo from '../assets/logos/photoshop_logo.png'
 import figmaLogo from '../assets/logos/figma_logo.png'
 
+//Experience Logos
+import rijnijsselExpLogo from '../assets/logos/rijnijssel.png'
+import booomExpLogo from '../assets/logos/booom.png'
+import fourdigitsExpLogo from '../assets/logos/fourdigits.png'
+
 //Navbar
 export const headerData = [
     {
@@ -116,8 +121,9 @@ export const experienceData = [
                             {
                                 exp: {
                                     title: 'Rijn IJssel - Media vormgeving',
-                                    fromtill: 'September 2018 - December 2022',
+                                    fromtill: 'September 2018 - December 2022 · 4 jaar',
                                     description: "Deze opleiding is gericht op de beeldende aspecten van het vak: (grafisch) ontwerp, video’s maken / bewerken. Hier heb ik leren werken met de volgende Adobe producten: Photoshop, InDesign, Illustrator, After Effects en Première Pro. Ook heb ik hier met programma’s gewerkt zoals Blender, voor 3D animaties, en Figma, voor webdesign.",
+                                    logo: rijnijsselExpLogo
                                 }
                             },
                         ]
@@ -130,16 +136,18 @@ export const experienceData = [
                             {
                                 exp: {
                                     title: 'BOOOM Digital Agency',
-                                    fromtill: 'September 2022 - Huidig',
+                                    fromtill: 'September 2022 - Huidig · 11 maanden',
                                     description: 'Ik heb hier de eerste 5 maanden parttime gewerkt als een trainee Front End ontwikkelaar. Ik heb in de eerste 3 maanden mijn opleiding “Mediavormgeving” af kunnen ronden',
                                     description2: 'Na 3 maanden parttime traineeship mocht ik full-time aan de slag. Ik heb veel Front End kennis opgedaan: TailwindCSS, NextJS en ReactJS. Projecten waar ik onder andere aan heb gewerkt zijn PejaProducten, ShapeMakers en ARV Group.',
+                                    logo: booomExpLogo
                                 }
                             },
                             {
                                 exp: {
                                     title: 'Four Digits',
-                                    fromtill: 'Februari 2022 - Augustus 2022',
+                                    fromtill: 'Februari 2022 - Augustus 2022 · 7 maanden',
                                     description: 'Op deze stage heb ik mij kunnen focussen op Django, Boostrap en Figma. Hier was ik bezig met het dashboard van Four Auctions.',
+                                    logo: fourdigitsExpLogo
                                 }
                             },
                         ]
