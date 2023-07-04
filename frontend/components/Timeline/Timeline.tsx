@@ -44,7 +44,7 @@ export default function Timeline({ tlInfo, activeTabIndex }: any) {
                             </div>
 
                         </h4>
-                        <p>{item.exp.fromtill}</p>
+                        <p className="!mb-[1rem]">{item.exp.fromtill}</p>
                         <p>{item.exp.description}</p>
                         {item.exp.description2 && (
                             <p>{item.exp.description2}</p>

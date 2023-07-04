@@ -138,7 +138,7 @@ export const experienceData = [
                                     title: 'BOOOM Digital Agency',
                                     fromtill: 'September 2022 - Huidig · 11 maanden',
                                     description: 'Ik heb hier de eerste 5 maanden parttime gewerkt als een trainee Front End ontwikkelaar. Ik heb in de eerste 3 maanden mijn opleiding “Mediavormgeving” af kunnen ronden',
-                                    description2: 'Na 3 maanden parttime traineeship mocht ik full-time aan de slag. Ik heb veel Front End kennis opgedaan: TailwindCSS, NextJS en ReactJS. Projecten waar ik onder andere aan heb gewerkt zijn PejaProducten, ShapeMakers en ARV Group.',
+                                    description2: 'Na 3 maanden parttime traineeship mocht ik full-time aan de slag. Ik heb veel Front End kennis opgedaan: TailwindCSS, NextJS en ReactJS.',
                                     logo: booomExpLogo
                                 }
                             },
