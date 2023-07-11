@@ -37,4 +37,5 @@ next-env.d.ts
 
 # normal files
 /components/Contact/
+
 /pages/admin.tsx
