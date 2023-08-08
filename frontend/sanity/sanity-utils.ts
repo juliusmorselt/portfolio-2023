@@ -14,11 +14,11 @@ export async function getExperience() {
             categories[]{
                 category,
                 companies[]{
-                  company,
-                  from,
-                  till,
-                  description,
-                  "image": image.asset->url
+                    company,
+                    from,
+                    till,
+                    description,
+                    "image": image.asset->url
                 }
             }
         }`,
