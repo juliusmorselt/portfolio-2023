@@ -44,11 +44,7 @@ export default function Experience()
                                 return (
                                     <div
                                         key={categoryIndex}
-                                        onClick={() =>
-                                            setActiveCategoryIndex(
-                                                categoryIndex
-                                            )
-                                        }
+                                        onClick={() => setActiveCategoryIndex( categoryIndex )}
                                         className='border-b border-b-white bg-white rounded-md hover:bg-violet-900 hover:bg-opacity-50 hover:cursor-pointer transition-all w-full'
                                     >
                                         <p
