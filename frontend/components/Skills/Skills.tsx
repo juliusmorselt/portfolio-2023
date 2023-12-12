@@ -13,25 +13,30 @@ type SkillData = {
   categories: any[]
 }
 
-export default function Skills() {
+export default function Skills()
+{
   const [skillData, setSkillData] = useState<SkillData[]>([])
   const [activeCategoryIndex, setActiveCategoryIndex] = useState(0)
 
-  useEffect(() => {
-    async function fetchExperienceData() {
+  useEffect(() =>
+  {
+    async function fetchExperienceData()
+    {
       const data = await getSkill()
       setSkillData(data)
     }
     fetchExperienceData()
   }, [])
 
-  useEffect(() => {
+  useEffect(() =>
+  {
     AOS.init()
   }, [])
 
   return (
     <section id="skills" className="container">
-      {skillData.map((item: SkillData, index: number) => {
+      {skillData.map((item: SkillData, index: number) =>
+      {
         return (
           <React.Fragment key={index}>
             <div />
@@ -40,7 +45,8 @@ export default function Skills() {
             <div className="py-6">
               {/* Tabs */}
               <div className="flex flex-wrap sm:flex-nowrap justify-center gap-2 text-center pb-6">
-                {item.categories?.map((category: any, categoryIndex: number) => {
+                {item.categories?.map((category: any, categoryIndex: number) =>
+                {
                   const { category: categoryName } = category
                   const isActive = categoryIndex === activeCategoryIndex
                   return (
@@ -50,9 +56,8 @@ export default function Skills() {
                       className="border-b border-b-white bg-white rounded-md hover:bg-violet-900 hover:bg-opacity-50 hover:cursor-pointer transition-all w-full"
                     >
                       <p
-                        className={`mb-0 p-4 ${
-                          isActive ? "font-bold" : "font-regular"
-                        }`}
+                        className={`mb-0 p-4 ${isActive ? "font-bold" : "font-regular"
+                          }`}
                       >
                         {categoryName}
                       </p>
@@ -63,7 +68,8 @@ export default function Skills() {
               <ResponsiveMasonry className="columns-auto">
                 <Masonry gutter="12px">
                   {/* Cards */}
-                  {item.categories.map((category: any, categoryIndex) => {
+                  {item.categories.map((category: any, categoryIndex) =>
+                  {
                     const { skills_array } = category
                     const isActive = categoryIndex === activeCategoryIndex
                     return (
