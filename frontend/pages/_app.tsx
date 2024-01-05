@@ -17,12 +17,7 @@ export default function App({ Component, pageProps }: AppProps)
         <meta name="google-site-verification" content="N2fMtNV8qf38LyzbrKv2njRfCtYEOhwsNBEXzLIlkDg" />
       </Head>
       <Header />
-      <main>
-        <section className='container'>
-          <h2>Page is currently under construction. Please stay put.</h2>
-        </section>
-      </main>
-      {/* <Component {...pageProps} /> */}
+      <Component {...pageProps} />
     </>
   )
 }

@@ -3,7 +3,7 @@ import { defineConfig } from 'sanity'
 import schemas from './sanity/schemas'
 
 export const config = {
-    projectId: `${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}`,
+    projectId: 'vkmw8x26',
     dataset: 'production',
     title: 'Portfolio Website',
     apiVersion: '2023-07-07',
