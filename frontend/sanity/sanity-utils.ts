@@ -2,9 +2,9 @@ import { createClient, groq } from 'next-sanity';
 
 export async function getExperience() {
     const client = createClient({
-        projectId: 'vkmw8x26',
+        projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
         dataset: 'production',
-        apiVersion: '2023-07-07',
+        apiVersion: process.env.NEXT_PUBLIC_API_VERSION,
     });
 
     return client.fetch(
@@ -27,9 +27,9 @@ export async function getExperience() {
 
 export async function getSkill() {
     const client = createClient({
-        projectId: 'vkmw8x26',
+        projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
         dataset: 'production',
-        apiVersion: '2023-07-07',
+        apiVersion: process.env.NEXT_PUBLIC_API_VERSION,
     });
 
     return client.fetch(
@@ -50,9 +50,9 @@ export async function getSkill() {
 
 export async function getAboutMe() {
     const client = createClient({
-        projectId: 'vkmw8x26',
+        projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
         dataset: 'production',
-        apiVersion: '2023-07-07',
+        apiVersion: process.env.NEXT_PUBLIC_API_VERSION,
     });
 
     return client.fetch(
